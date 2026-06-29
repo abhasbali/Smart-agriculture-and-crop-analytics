@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0881a565503b8b24af981d04c4583040 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0881a565503b8b24af981d04c4583040" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0881a565503b8b24af981d04c4583040 = L.map(
+                "map_0881a565503b8b24af981d04c4583040",
+                {
+                    center: [22.0, 78.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_95662b314949b915d0ef818c7ed74dbd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_95662b314949b915d0ef818c7ed74dbd.addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+            var circle_marker_9bdd9d320b9abb66a7dc06126f1861ba = L.circleMarker(
+                [11.1271, 78.6569],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.67, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_85bd84c35a56e9e720d6ab8c370be165 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_816d26c7b099bf809f27ca392a6f31ff = $(`<div id="html_816d26c7b099bf809f27ca392a6f31ff" style="width: 100.0%; height: 100.0%;"><b>State:</b> Tamil Nadu<br><b>Agri Score:</b> 0.7836<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹5085.91 Cr</div>`)[0];
+                popup_85bd84c35a56e9e720d6ab8c370be165.setContent(html_816d26c7b099bf809f27ca392a6f31ff);
+            
+        
+
+        circle_marker_9bdd9d320b9abb66a7dc06126f1861ba.bindPopup(popup_85bd84c35a56e9e720d6ab8c370be165)
+        ;
+
+        
+    
+    
+            var circle_marker_718c4a7336f878a90437f03ca0d895bd = L.circleMarker(
+                [25.0961, 85.3131],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.95, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_5292e1bb454951d06e547204736cecb6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9f90ce71e6d7871287dbb7db8590aff3 = $(`<div id="html_9f90ce71e6d7871287dbb7db8590aff3" style="width: 100.0%; height: 100.0%;"><b>State:</b> Bihar<br><b>Agri Score:</b> 0.5974<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹3364.01 Cr</div>`)[0];
+                popup_5292e1bb454951d06e547204736cecb6.setContent(html_9f90ce71e6d7871287dbb7db8590aff3);
+            
+        
+
+        circle_marker_718c4a7336f878a90437f03ca0d895bd.bindPopup(popup_5292e1bb454951d06e547204736cecb6)
+        ;
+
+        
+    
+    
+            var circle_marker_52b87b4db52187bcfcf2faac4e4231f0 = L.circleMarker(
+                [10.8505, 76.2711],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.82, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_af8f3155cae6538031672b0d4c4fc273 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_53093e2fdeab766b85d9fa9b450e8a71 = $(`<div id="html_53093e2fdeab766b85d9fa9b450e8a71" style="width: 100.0%; height: 100.0%;"><b>State:</b> Kerala<br><b>Agri Score:</b> 0.5912<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹4769.08 Cr</div>`)[0];
+                popup_af8f3155cae6538031672b0d4c4fc273.setContent(html_53093e2fdeab766b85d9fa9b450e8a71);
+            
+        
+
+        circle_marker_52b87b4db52187bcfcf2faac4e4231f0.bindPopup(popup_af8f3155cae6538031672b0d4c4fc273)
+        ;
+
+        
+    
+    
+            var circle_marker_067d13815c9293a5ff3a9caf6fc4043e = L.circleMarker(
+                [31.1471, 75.3412],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.21, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_ded41a0e061c59ec9381c08816e1c6a3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7ad7f713ff4ec17181a5ddf5d2bc3dfd = $(`<div id="html_7ad7f713ff4ec17181a5ddf5d2bc3dfd" style="width: 100.0%; height: 100.0%;"><b>State:</b> Punjab<br><b>Agri Score:</b> 0.5603<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2697.82 Cr</div>`)[0];
+                popup_ded41a0e061c59ec9381c08816e1c6a3.setContent(html_7ad7f713ff4ec17181a5ddf5d2bc3dfd);
+            
+        
+
+        circle_marker_067d13815c9293a5ff3a9caf6fc4043e.bindPopup(popup_ded41a0e061c59ec9381c08816e1c6a3)
+        ;
+
+        
+    
+    
+            var circle_marker_f4020e4bc2e85a08f36f7ed52a4564a2 = L.circleMarker(
+                [22.2587, 71.1924],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.34, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_1f1931f5776c3b5131309e0b4c2c858f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_81c9b722d375a95313108dce0231a6c1 = $(`<div id="html_81c9b722d375a95313108dce0231a6c1" style="width: 100.0%; height: 100.0%;"><b>State:</b> Gujarat<br><b>Agri Score:</b> 0.4669<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹3122.09 Cr</div>`)[0];
+                popup_1f1931f5776c3b5131309e0b4c2c858f.setContent(html_81c9b722d375a95313108dce0231a6c1);
+            
+        
+
+        circle_marker_f4020e4bc2e85a08f36f7ed52a4564a2.bindPopup(popup_1f1931f5776c3b5131309e0b4c2c858f)
+        ;
+
+        
+    
+    
+            var circle_marker_f1136724824f37f31cda1b130f5f0a43 = L.circleMarker(
+                [29.0588, 76.0856],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.49, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_6b6b1aea63c04a0a2d94ea29662d6037 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_36fb4f4441c466e0146734e04a3bd848 = $(`<div id="html_36fb4f4441c466e0146734e04a3bd848" style="width: 100.0%; height: 100.0%;"><b>State:</b> Haryana<br><b>Agri Score:</b> 0.4243<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2246.57 Cr</div>`)[0];
+                popup_6b6b1aea63c04a0a2d94ea29662d6037.setContent(html_36fb4f4441c466e0146734e04a3bd848);
+            
+        
+
+        circle_marker_f1136724824f37f31cda1b130f5f0a43.bindPopup(popup_6b6b1aea63c04a0a2d94ea29662d6037)
+        ;
+
+        
+    
+    
+            var circle_marker_e04880eab0ff4e1b1d760c6d4d8d3986 = L.circleMarker(
+                [23.4734, 77.947],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.93, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_7e140ba84fe4f016a4eb0ef671f71b8e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_38770cc8fdce675d98a163f20968d1d0 = $(`<div id="html_38770cc8fdce675d98a163f20968d1d0" style="width: 100.0%; height: 100.0%;"><b>State:</b> Mp<br><b>Agri Score:</b> 0.2966<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹3437.59 Cr</div>`)[0];
+                popup_7e140ba84fe4f016a4eb0ef671f71b8e.setContent(html_38770cc8fdce675d98a163f20968d1d0);
+            
+        
+
+        circle_marker_e04880eab0ff4e1b1d760c6d4d8d3986.bindPopup(popup_7e140ba84fe4f016a4eb0ef671f71b8e)
+        ;
+
+        
+    
+    
+            var circle_marker_f27fbb6124b9df9525ab5303cdde65b5 = L.circleMarker(
+                [20.9517, 85.0985],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.22, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_350d2446a169724838f5fa5e0ad22b66 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6959f0af24efa21f002dcf9a73d65001 = $(`<div id="html_6959f0af24efa21f002dcf9a73d65001" style="width: 100.0%; height: 100.0%;"><b>State:</b> Odisha<br><b>Agri Score:</b> 0.2611<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2339.63 Cr</div>`)[0];
+                popup_350d2446a169724838f5fa5e0ad22b66.setContent(html_6959f0af24efa21f002dcf9a73d65001);
+            
+        
+
+        circle_marker_f27fbb6124b9df9525ab5303cdde65b5.bindPopup(popup_350d2446a169724838f5fa5e0ad22b66)
+        ;
+
+        
+    
+    
+            var circle_marker_7be73f491f037245a93f9ed453a41623 = L.circleMarker(
+                [22.9868, 87.855],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_e3692787187a4a604d9f4447a5855a9c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_22b8f3b95eb6749e7148d7f2b6a571ca = $(`<div id="html_22b8f3b95eb6749e7148d7f2b6a571ca" style="width: 100.0%; height: 100.0%;"><b>State:</b> Wb<br><b>Agri Score:</b> 0.2401<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2093.34 Cr</div>`)[0];
+                popup_e3692787187a4a604d9f4447a5855a9c.setContent(html_22b8f3b95eb6749e7148d7f2b6a571ca);
+            
+        
+
+        circle_marker_7be73f491f037245a93f9ed453a41623.bindPopup(popup_e3692787187a4a604d9f4447a5855a9c)
+        ;
+
+        
+    
+    
+            var circle_marker_2d1d5caf3fbed9ba62c60a4111010b4b = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.69, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_0443d3c9266c815e8052627d557cfb59 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_db4d3568217b814df548d2d781e5f4ac = $(`<div id="html_db4d3568217b814df548d2d781e5f4ac" style="width: 100.0%; height: 100.0%;"><b>State:</b> Up<br><b>Agri Score:</b> 0.2347<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹1742.41 Cr</div>`)[0];
+                popup_0443d3c9266c815e8052627d557cfb59.setContent(html_db4d3568217b814df548d2d781e5f4ac);
+            
+        
+
+        circle_marker_2d1d5caf3fbed9ba62c60a4111010b4b.bindPopup(popup_0443d3c9266c815e8052627d557cfb59)
+        ;
+
+        
+    
+    
+            var circle_marker_80866fd10afafb1a8dddb32af19ee28b = L.circleMarker(
+                [15.3173, 75.7139],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.37, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_94c9ffa74e4e933a3a49bbe3caea0b43 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f24c4f29f49031085d245f81d0c7e016 = $(`<div id="html_f24c4f29f49031085d245f81d0c7e016" style="width: 100.0%; height: 100.0%;"><b>State:</b> Karnataka<br><b>Agri Score:</b> 0.2187<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2440.81 Cr</div>`)[0];
+                popup_94c9ffa74e4e933a3a49bbe3caea0b43.setContent(html_f24c4f29f49031085d245f81d0c7e016);
+            
+        
+
+        circle_marker_80866fd10afafb1a8dddb32af19ee28b.bindPopup(popup_94c9ffa74e4e933a3a49bbe3caea0b43)
+        ;
+
+        
+    
+    
+            var circle_marker_f65c52c290acfdca7906e58e7982badd = L.circleMarker(
+                [27.0238, 73.3119],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.29, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_00a4993b5e6552a2614b5d3413523447 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_362744c00e55995b3ee3b32d5bbe12b3 = $(`<div id="html_362744c00e55995b3ee3b32d5bbe12b3" style="width: 100.0%; height: 100.0%;"><b>State:</b> Rajasthan<br><b>Agri Score:</b> 0.2145<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹1687.98 Cr</div>`)[0];
+                popup_00a4993b5e6552a2614b5d3413523447.setContent(html_362744c00e55995b3ee3b32d5bbe12b3);
+            
+        
+
+        circle_marker_f65c52c290acfdca7906e58e7982badd.bindPopup(popup_00a4993b5e6552a2614b5d3413523447)
+        ;
+
+        
+    
+    
+            var circle_marker_3df8d7fd6d1ec9eb8a386ecb41bf8dba = L.circleMarker(
+                [19.6633, 75.3003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.81, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_cff1eafca1557973ef53993d271141a7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3283e16296d050b84b0e15c3a811904f = $(`<div id="html_3283e16296d050b84b0e15c3a811904f" style="width: 100.0%; height: 100.0%;"><b>State:</b> Maharashtra<br><b>Agri Score:</b> 0.1907<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹1423.08 Cr</div>`)[0];
+                popup_cff1eafca1557973ef53993d271141a7.setContent(html_3283e16296d050b84b0e15c3a811904f);
+            
+        
+
+        circle_marker_3df8d7fd6d1ec9eb8a386ecb41bf8dba.bindPopup(popup_cff1eafca1557973ef53993d271141a7)
+        ;
+
+        
+    
+    
+            var circle_marker_ebb4efa3100b6259f01a74a181dd4686 = L.circleMarker(
+                [26.2006, 92.9376],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.34, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_9ffc5cba410158817336ecbb1a72432a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0dd6e31489116015cb742c721ba93d68 = $(`<div id="html_0dd6e31489116015cb742c721ba93d68" style="width: 100.0%; height: 100.0%;"><b>State:</b> Assam<br><b>Agri Score:</b> 0.1668<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2983.45 Cr</div>`)[0];
+                popup_9ffc5cba410158817336ecbb1a72432a.setContent(html_0dd6e31489116015cb742c721ba93d68);
+            
+        
+
+        circle_marker_ebb4efa3100b6259f01a74a181dd4686.bindPopup(popup_9ffc5cba410158817336ecbb1a72432a)
+        ;
+
+        
+    
+    
+            var circle_marker_6b62da9ba354bac9a725851b2513bcf7 = L.circleMarker(
+                [15.9129, 79.74],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.3, "stroke": true, "weight": 3}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+        var popup_b967f7e94f36dfef850933ef0f8cc473 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0405640dd57ba6ce7271ad42a0096eeb = $(`<div id="html_0405640dd57ba6ce7271ad42a0096eeb" style="width: 100.0%; height: 100.0%;"><b>State:</b> Ap<br><b>Agri Score:</b> 0.1148<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹1799.07 Cr</div>`)[0];
+                popup_b967f7e94f36dfef850933ef0f8cc473.setContent(html_0405640dd57ba6ce7271ad42a0096eeb);
+            
+        
+
+        circle_marker_6b62da9ba354bac9a725851b2513bcf7.bindPopup(popup_b967f7e94f36dfef850933ef0f8cc473)
+        ;
+
+        
+    
+    
+            var feature_group_fbcd39ea0e4767a21c98beef11e74e3f = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_3f7197acec73371d7c8053229a45460a = L.circleMarker(
+                [11.1271, 78.6569],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.67, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_80765e2ad08f416924c7c74d0a740118 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_422f0f52043d4ade73f6eb1a88b26032 = $(`<div id="html_422f0f52043d4ade73f6eb1a88b26032" style="width: 100.0%; height: 100.0%;"><b>State:</b> Tamil Nadu<br><b>Agri Score:</b> 0.7836<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹5085.91 Cr</div>`)[0];
+                popup_80765e2ad08f416924c7c74d0a740118.setContent(html_422f0f52043d4ade73f6eb1a88b26032);
+            
+        
+
+        circle_marker_3f7197acec73371d7c8053229a45460a.bindPopup(popup_80765e2ad08f416924c7c74d0a740118)
+        ;
+
+        
+    
+    
+            var circle_marker_ddf9ee029ccb1d7574032b606e8532ec = L.circleMarker(
+                [25.0961, 85.3131],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.95, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_2a3990fb36f9fa18c9ec06d2f15ca86f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0d8573facd31edfc4cc248a680307968 = $(`<div id="html_0d8573facd31edfc4cc248a680307968" style="width: 100.0%; height: 100.0%;"><b>State:</b> Bihar<br><b>Agri Score:</b> 0.5974<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹3364.01 Cr</div>`)[0];
+                popup_2a3990fb36f9fa18c9ec06d2f15ca86f.setContent(html_0d8573facd31edfc4cc248a680307968);
+            
+        
+
+        circle_marker_ddf9ee029ccb1d7574032b606e8532ec.bindPopup(popup_2a3990fb36f9fa18c9ec06d2f15ca86f)
+        ;
+
+        
+    
+    
+            var circle_marker_33d48f42265bbf0118af13001bb2c899 = L.circleMarker(
+                [10.8505, 76.2711],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.82, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_80b33adc7c7e4ec9c4cab9cfa9c0fae5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d2ff34a39636bc5c69e1e940c2e8a49f = $(`<div id="html_d2ff34a39636bc5c69e1e940c2e8a49f" style="width: 100.0%; height: 100.0%;"><b>State:</b> Kerala<br><b>Agri Score:</b> 0.5912<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹4769.08 Cr</div>`)[0];
+                popup_80b33adc7c7e4ec9c4cab9cfa9c0fae5.setContent(html_d2ff34a39636bc5c69e1e940c2e8a49f);
+            
+        
+
+        circle_marker_33d48f42265bbf0118af13001bb2c899.bindPopup(popup_80b33adc7c7e4ec9c4cab9cfa9c0fae5)
+        ;
+
+        
+    
+    
+            var circle_marker_ea24079eb677a9ea90bb8df900cf1790 = L.circleMarker(
+                [31.1471, 75.3412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.21, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_e2445a9800e1ec0cc0d687bf7d1a7bf9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_81bad2b526a5beaa7da81779b2054101 = $(`<div id="html_81bad2b526a5beaa7da81779b2054101" style="width: 100.0%; height: 100.0%;"><b>State:</b> Punjab<br><b>Agri Score:</b> 0.5603<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2697.82 Cr</div>`)[0];
+                popup_e2445a9800e1ec0cc0d687bf7d1a7bf9.setContent(html_81bad2b526a5beaa7da81779b2054101);
+            
+        
+
+        circle_marker_ea24079eb677a9ea90bb8df900cf1790.bindPopup(popup_e2445a9800e1ec0cc0d687bf7d1a7bf9)
+        ;
+
+        
+    
+    
+            var circle_marker_a28f33f4d4acc24c4e6551bef814397e = L.circleMarker(
+                [22.2587, 71.1924],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.34, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_86dfdd41f7660102a068f7d17d525f27 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1c58592f5215d218a7577000321ab42c = $(`<div id="html_1c58592f5215d218a7577000321ab42c" style="width: 100.0%; height: 100.0%;"><b>State:</b> Gujarat<br><b>Agri Score:</b> 0.4669<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹3122.09 Cr</div>`)[0];
+                popup_86dfdd41f7660102a068f7d17d525f27.setContent(html_1c58592f5215d218a7577000321ab42c);
+            
+        
+
+        circle_marker_a28f33f4d4acc24c4e6551bef814397e.bindPopup(popup_86dfdd41f7660102a068f7d17d525f27)
+        ;
+
+        
+    
+    
+            var circle_marker_e1ae1430f7eb27109c215a7927a1c7aa = L.circleMarker(
+                [29.0588, 76.0856],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.49, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_11a9652293cc1e5b48c199f8661359ef = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5287ade64c4d61f3436c434f0b1532f2 = $(`<div id="html_5287ade64c4d61f3436c434f0b1532f2" style="width: 100.0%; height: 100.0%;"><b>State:</b> Haryana<br><b>Agri Score:</b> 0.4243<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2246.57 Cr</div>`)[0];
+                popup_11a9652293cc1e5b48c199f8661359ef.setContent(html_5287ade64c4d61f3436c434f0b1532f2);
+            
+        
+
+        circle_marker_e1ae1430f7eb27109c215a7927a1c7aa.bindPopup(popup_11a9652293cc1e5b48c199f8661359ef)
+        ;
+
+        
+    
+    
+            var circle_marker_4aae5694e6052eb4cfc13059dbebd466 = L.circleMarker(
+                [23.4734, 77.947],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.93, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_5fee4de2f8bf223a6eae2423d9aff513 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_130cfc4e71d32377f4aabbbbf8f2da8c = $(`<div id="html_130cfc4e71d32377f4aabbbbf8f2da8c" style="width: 100.0%; height: 100.0%;"><b>State:</b> Mp<br><b>Agri Score:</b> 0.2966<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹3437.59 Cr</div>`)[0];
+                popup_5fee4de2f8bf223a6eae2423d9aff513.setContent(html_130cfc4e71d32377f4aabbbbf8f2da8c);
+            
+        
+
+        circle_marker_4aae5694e6052eb4cfc13059dbebd466.bindPopup(popup_5fee4de2f8bf223a6eae2423d9aff513)
+        ;
+
+        
+    
+    
+            var circle_marker_4de6c61090c06a496d46c12da3d8379e = L.circleMarker(
+                [20.9517, 85.0985],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.22, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_feea143b03b6eab4b87845b9621be747 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0baf31c7cc584253d79a558c288b6dff = $(`<div id="html_0baf31c7cc584253d79a558c288b6dff" style="width: 100.0%; height: 100.0%;"><b>State:</b> Odisha<br><b>Agri Score:</b> 0.2611<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2339.63 Cr</div>`)[0];
+                popup_feea143b03b6eab4b87845b9621be747.setContent(html_0baf31c7cc584253d79a558c288b6dff);
+            
+        
+
+        circle_marker_4de6c61090c06a496d46c12da3d8379e.bindPopup(popup_feea143b03b6eab4b87845b9621be747)
+        ;
+
+        
+    
+    
+            var circle_marker_d215a13d3186e766ce374f1cafaa5b3f = L.circleMarker(
+                [22.9868, 87.855],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_cf81d0b252545943708e74648a1fd3bf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_69fba80b1e950527b1f66673709f28fc = $(`<div id="html_69fba80b1e950527b1f66673709f28fc" style="width: 100.0%; height: 100.0%;"><b>State:</b> Wb<br><b>Agri Score:</b> 0.2401<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2093.34 Cr</div>`)[0];
+                popup_cf81d0b252545943708e74648a1fd3bf.setContent(html_69fba80b1e950527b1f66673709f28fc);
+            
+        
+
+        circle_marker_d215a13d3186e766ce374f1cafaa5b3f.bindPopup(popup_cf81d0b252545943708e74648a1fd3bf)
+        ;
+
+        
+    
+    
+            var circle_marker_9717a1a0392593e7757900fd1f493d78 = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.69, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_a7ec36ce3b195f9f5a6c408605fe64ff = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5715b837b285f45ec1020ad06f858cd9 = $(`<div id="html_5715b837b285f45ec1020ad06f858cd9" style="width: 100.0%; height: 100.0%;"><b>State:</b> Up<br><b>Agri Score:</b> 0.2347<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹1742.41 Cr</div>`)[0];
+                popup_a7ec36ce3b195f9f5a6c408605fe64ff.setContent(html_5715b837b285f45ec1020ad06f858cd9);
+            
+        
+
+        circle_marker_9717a1a0392593e7757900fd1f493d78.bindPopup(popup_a7ec36ce3b195f9f5a6c408605fe64ff)
+        ;
+
+        
+    
+    
+            var circle_marker_c174bd60f0fdf34cfa7529f11d67eeef = L.circleMarker(
+                [15.3173, 75.7139],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.37, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_4c88a2029b29db6adfe8be50f3d3dbdc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9ddfda32fd75ef42bccd7333496ef898 = $(`<div id="html_9ddfda32fd75ef42bccd7333496ef898" style="width: 100.0%; height: 100.0%;"><b>State:</b> Karnataka<br><b>Agri Score:</b> 0.2187<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2440.81 Cr</div>`)[0];
+                popup_4c88a2029b29db6adfe8be50f3d3dbdc.setContent(html_9ddfda32fd75ef42bccd7333496ef898);
+            
+        
+
+        circle_marker_c174bd60f0fdf34cfa7529f11d67eeef.bindPopup(popup_4c88a2029b29db6adfe8be50f3d3dbdc)
+        ;
+
+        
+    
+    
+            var circle_marker_d6776a0d570d4b39740757dccee55277 = L.circleMarker(
+                [27.0238, 73.3119],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.29, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_657b1f9b5919b7aa12d14c7b7412da4e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_840228fb5141fb0d2a72d3f80ba04c51 = $(`<div id="html_840228fb5141fb0d2a72d3f80ba04c51" style="width: 100.0%; height: 100.0%;"><b>State:</b> Rajasthan<br><b>Agri Score:</b> 0.2145<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹1687.98 Cr</div>`)[0];
+                popup_657b1f9b5919b7aa12d14c7b7412da4e.setContent(html_840228fb5141fb0d2a72d3f80ba04c51);
+            
+        
+
+        circle_marker_d6776a0d570d4b39740757dccee55277.bindPopup(popup_657b1f9b5919b7aa12d14c7b7412da4e)
+        ;
+
+        
+    
+    
+            var circle_marker_8c6fac9a9cd42b09336ff41f4a024535 = L.circleMarker(
+                [19.6633, 75.3003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.81, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_d2c3363aae705fa8392483ba604ba0d2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_625ab29136e837692cffe7a021102cf4 = $(`<div id="html_625ab29136e837692cffe7a021102cf4" style="width: 100.0%; height: 100.0%;"><b>State:</b> Maharashtra<br><b>Agri Score:</b> 0.1907<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹1423.08 Cr</div>`)[0];
+                popup_d2c3363aae705fa8392483ba604ba0d2.setContent(html_625ab29136e837692cffe7a021102cf4);
+            
+        
+
+        circle_marker_8c6fac9a9cd42b09336ff41f4a024535.bindPopup(popup_d2c3363aae705fa8392483ba604ba0d2)
+        ;
+
+        
+    
+    
+            var circle_marker_40d6d45e24713b9f8386a17c83babbd1 = L.circleMarker(
+                [26.2006, 92.9376],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.34, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_65f78c3a55f7b2d2c7ae4702ecbf84ba = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6bffbb6e9d01b92e99e70b7eda7bd594 = $(`<div id="html_6bffbb6e9d01b92e99e70b7eda7bd594" style="width: 100.0%; height: 100.0%;"><b>State:</b> Assam<br><b>Agri Score:</b> 0.1668<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹2983.45 Cr</div>`)[0];
+                popup_65f78c3a55f7b2d2c7ae4702ecbf84ba.setContent(html_6bffbb6e9d01b92e99e70b7eda7bd594);
+            
+        
+
+        circle_marker_40d6d45e24713b9f8386a17c83babbd1.bindPopup(popup_65f78c3a55f7b2d2c7ae4702ecbf84ba)
+        ;
+
+        
+    
+    
+            var circle_marker_9268eb653db6170e927ed2f023111d35 = L.circleMarker(
+                [15.9129, 79.74],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbcd39ea0e4767a21c98beef11e74e3f);
+        
+    
+        var popup_a4f4b5696b88d9b85e37f2d04ba7cfd4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e4ab2510a5d9b685f4d0805c59d982e3 = $(`<div id="html_e4ab2510a5d9b685f4d0805c59d982e3" style="width: 100.0%; height: 100.0%;"><b>State:</b> Ap<br><b>Agri Score:</b> 0.1148<br><b>Top Crop:</b> Wheat<br><b>Water Stressed:</b> Yes<br><b>Farm Revenue:</b> ₹1799.07 Cr</div>`)[0];
+                popup_a4f4b5696b88d9b85e37f2d04ba7cfd4.setContent(html_e4ab2510a5d9b685f4d0805c59d982e3);
+            
+        
+
+        circle_marker_9268eb653db6170e927ed2f023111d35.bindPopup(popup_a4f4b5696b88d9b85e37f2d04ba7cfd4)
+        ;
+
+        
+    
+    
+            feature_group_fbcd39ea0e4767a21c98beef11e74e3f.addTo(map_0881a565503b8b24af981d04c4583040);
+        
+    
+            var layer_control_28ab91bea24e9a34c4a830fa65dd6a34_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_95662b314949b915d0ef818c7ed74dbd,
+                },
+                overlays :  {
+                    "Water Stressed States" : feature_group_fbcd39ea0e4767a21c98beef11e74e3f,
+                },
+            };
+            let layer_control_28ab91bea24e9a34c4a830fa65dd6a34 = L.control.layers(
+                layer_control_28ab91bea24e9a34c4a830fa65dd6a34_layers.base_layers,
+                layer_control_28ab91bea24e9a34c4a830fa65dd6a34_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0881a565503b8b24af981d04c4583040);
+
+        
+</script>
+</html>

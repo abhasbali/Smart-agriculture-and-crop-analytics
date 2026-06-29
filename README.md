@@ -3,9 +3,7 @@
 A full-stack analytics platform for the Smart Agriculture & Crop Analytics
 hackathon set. The backend implements all four tasks in Python (ETL,
 heap-sort ranking, dashboard analytics, risk mapping) and exposes them as a
-REST API; the React frontend renders an interactive dashboard inspired by
-[upag.gov.in](https://www.upag.gov.in/).
-
+REST API.
 ## Project structure
 
 ```
